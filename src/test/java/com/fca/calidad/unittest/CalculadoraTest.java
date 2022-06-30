@@ -35,7 +35,7 @@ public class CalculadoraTest {
 		
 		//Ejercicio, llamada del código que vamos a probar
 		double resultado = calculadora.suma(-10, -5);
-		double resultadoEsperado = 15;
+		double resultadoEsperado = -15;
 		
 		//Verificación. Comparar el resultado de ejecucuón vs ejecución esperada
 		assertThat(resultado, is(resultadoEsperado));
