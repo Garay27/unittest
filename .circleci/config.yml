@@ -26,11 +26,13 @@ jobs:
       - run:
           name: Test
           command: mvn test
-       # Then run your tests!
+      #imprimir un texto    
       - run:
           name: Mensaje
-          command: echo "Este es un mensaje de prueba"
-       steps:
+          command: echo "Hola mundo"
+         
+      #para guardar los test
+          steps:
       - run:
           name: Save test results
           command: |
@@ -39,9 +41,6 @@ jobs:
           when: always
       - store_test_results:
           path: ~/test-results
-
-
-
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
